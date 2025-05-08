@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>saisie</title>
+    <link rel="stylesheet" href="saisie.css">
+</head>
+<body>
+    <h1>vos coordonnees</h1>
+
+    <form method="post" action="connexion.inc.php">
+        <div>
+            <div>
+                <!-- Nom -->
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+
+                <!-- Prénom -->
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+            </div>
+
+            <div>
+            <!-- Date de naissance -->
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+            <!-- Ville -->
+            <label for="ville">Ville :</label>
+            <input type="text" id="ville" name="ville" required><br><br>
+
+            <!-- Sexe -->
+            <label for="sexe">Sexe :</label>
+            <select id="sexe" name="sexe" required>
+                <option value="">-- Sélectionnez le sexe --</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select><br><br>
+
+            <!-- FILIERE -->
+            <label for="filiere">filiere :</label>
+            <select id="filiere" name="filiere" required>
+               <option value="SIL">SIL</option>
+               <option value="SI">SI</option>
+               <option value="RIT">RIT</option>
+               <option value="SG">SG</option>
+            </select><br><br>
+
+        </div>
+     
+        <!-- Boutons -->
+        <button type="reset">Effacer</button>
+        <button type="submit" name="enregistrer">Enregistrer</button>
+    </form>
+</body>
+</html>
