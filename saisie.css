@@ -9,7 +9,7 @@ body, h1, form, fieldset, label, input, select {
 body {
     background-color: #f4f4f9;
     padding: 20px;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     height: 100vh;
